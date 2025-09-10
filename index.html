@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Dimas Agung</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Custom grid untuk galeri responsif */
+        .responsive-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            grid-auto-flow: dense;
+        }
+        .item-portrait {
+            grid-column: span 1;
+            grid-row: span 2;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-200">
+
+    <!-- Header Section -->
+    <header class="bg-gray-800 p-4 sticky top-0 z-50">
+        <nav class="container mx-auto flex justify-between items-center">
+            <h1 class="font-bold text-lg">Dimas Agung</h1>
+            <div class="md:hidden">
+                <!-- Hamburger menu icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+            </div>
+            <ul class="hidden md:flex space-x-6">
+                <li><a href="#about" class="hover:text-yellow-400 transition-colors">Tentang Saya</a></li>
+                <li><a href="#hobbies" class="hover:text-yellow-400 transition-colors">Hobi Saya</a></li>
+                <li><a href="#apps" class="hover:text-yellow-400 transition-colors">Aplikasi</a></li>
+                <li><a href="#contact" class="hover:text-yellow-400 transition-colors">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container mx-auto p-4 sm:p-6 lg:p-8">
+        <!-- About Me Section -->
+        <section id="about" class="bg-gray-800 rounded-xl p-6 sm:p-8 flex flex-col md:flex-row items-center space-y-6 md:space-y-0 md:space-x-8 mb-12">
+            <div class="flex-shrink-0">
+                <img src="profil/profil_saya.png" alt="Foto Profil" class="w-32 h-32 md:w-40 md:h-40 rounded-full object-cover border-4 border-gray-700">
+            </div>
+            <div class="text-center md:text-left">
+                <h2 class="font-bold text-2xl sm:text-3xl mb-2">Selamat datang di portofolio saya</h2>
+                <p class="text-gray-400 mb-4 text-sm sm:text-base">Perkenalkan saya Kadek Dimas Agung Wisnu, biasa dipanggil Dimas atau Mas. Saat ini saya berusia 19 tahun dan sedang menempuh studi di Undiksha dengan jurusan Teknik Informatika.</p>
+                <div class="flex justify-center md:justify-start space-x-4">
+                    <!-- Tautan ke Instagram -->
+                    <a href="https://www.instagram.com/dimass.aguung" class="text-yellow-400 hover:text-yellow-200 transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.5" y2="6.5"></line></svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Hobbies Section -->
+           <section id="hobbies" class="text-center mb-12">
+            <h2 class="font-bold text-2xl sm:text-3xl mb-4">Hobi saya</h2>
+            <p class="text-gray-600 mb-8 max-w-2xl mx-auto">Saya suka membuat desain grafis seperti poster infografis ataupun membuat Photo manipulation. Saya memulai hobi ini sejak tahun 2020.</p>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Image 1 -->
+                <div class="relative group rounded-xl overflow-hidden shadow-md transform transition-transform duration-300 hover:scale-105">
+                    <img src="design/SAKEER.png" alt="Karya Desain 1" class="w-full h-auto object-cover">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <p class="text-white text-lg font-semibold">Top hero support favorit saya</p>
+                    </div>
+                </div>
+                <!-- Image 2 -->
+                <div class="relative group rounded-xl overflow-hidden shadow-md transform transition-transform duration-300 hover:scale-105">
+                    <img src="design/Gemini.png" alt="Karya Desain 2" class="w-full h-auto object-cover">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <p class="text-white text-lg font-semibold">poster anime yang terinspiarsi dari ai gemini</p>
+                    </div>
+                </div>
+                <!-- Image 3 -->
+                <div class="relative group rounded-xl overflow-hidden shadow-md transform transition-transform duration-300 hover:scale-105">
+                    <img src="design/poster_andre_barbershop.png" alt="Karya Desain 3" class="w-full h-auto object-cover">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <p class="text-white text-lg font-semibold">promosi andre barbeshop</p>
+                    </div>
+                </div>
+                <!-- Image 4 -->
+                <div class="relative group rounded-xl overflow-hidden shadow-md transform transition-transform duration-300 hover:scale-105">
+                    <img src="design/wallpaper_desktop1.png" alt="Karya Desain 4" class="w-full h-auto object-cover">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <p class="text-white text-lg font-semibold">wallpaper untuk desktop dengan tema anime</p>
+                    </div>
+                </div>
+                <!-- Image 5 -->
+                <div class="relative group rounded-xl overflow-hidden shadow-md transform transition-transform duration-300 hover:scale-105">
+                    <img src="design/wallpaper_desktop2.png" alt="Karya Desain 5" class="w-full h-auto object-cover">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <p class="text-white text-lg font-semibold">wallpaper untuk desktop dengan tema anime</p>
+                    </div>
+                </div>
+                <!-- Image 6 -->
+                <div class="relative group rounded-xl overflow-hidden shadow-md transform transition-transform duration-300 hover:scale-105">
+                    <img src="design/winter_of_death.jpg" alt="Karya Desain 6" class="w-full h-auto object-cover">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <p class="text-white text-lg font-semibold">poster film fiksi horor</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Apps Section -->
+        <section id="apps" class="text-center mb-12">
+            <h2 class="font-bold text-2xl sm:text-3xl mb-4">Aplikasi yang saya gunakan</h2>
+            <div class="flex flex-wrap justify-center items-center gap-8">
+                <!-- App 1 -->
+                <div class="flex flex-col items-center">
+                    <img src="icon/Pinterest.png" alt="Pinterest Icon" class="w-16 h-16 sm:w-20 sm:h-20 rounded-full">
+                    <p class="mt-2 text-sm sm:text-base">Pinterest</p>
+                </div>
+                <!-- App 2 -->
+                <div class="flex flex-col items-center">
+                    <img src="icon/pixellab.png" alt="Pixelab Icon" class="w-16 h-16 sm:w-20 sm:h-20 rounded-full">
+                    <p class="mt-2 text-sm sm:text-base">Pixelab</p>
+                </div>
+                <!-- App 3 -->
+                <div class="flex flex-col items-center">
+                    <img src="icon/canva.png" alt="Canva Icon" class="w-16 h-16 sm:w-20 sm:h-20 rounded-full">
+                    <p class="mt-2 text-sm sm:text-base">Canva</p>
+                </div>
+                <!-- App 4 -->
+                <div class="flex flex-col items-center">
+                    <img src="icon/Alight_motion.png" alt="Alight motion Icon" class="w-16 h-16 sm:w-20 sm:h-20 rounded-full">
+                    <p class="mt-2 text-sm sm:text-base">Alight motion</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="bg-gray-800 rounded-xl p-6 sm:p-8 max-w-xl mx-auto">
+            <h2 class="font-bold text-2xl sm:text-3xl text-center mb-4">Ayo kenalan!</h2>
+            <form action="#" method="POST" class="space-y-4">
+                <div>
+                    <input type="text" id="name" name="name" placeholder="Nama" class="w-full p-3 rounded-md bg-gray-700 text-white border border-gray-600 focus:outline-none focus:ring-2 focus:ring-yellow-500 transition-shadow" required>
+                </div>
+                <div>
+                    <input type="email" id="email" name="email" placeholder="Email" class="w-full p-3 rounded-md bg-gray-700 text-white border border-gray-600 focus:outline-none focus:ring-2 focus:ring-yellow-500 transition-shadow" required>
+                </div>
+                <div>
+                    <textarea id="message" name="message" rows="5" placeholder="Apa yang ingin Anda bicarakan?" class="w-full p-3 rounded-md bg-gray-700 text-white border border-gray-600 focus:outline-none focus:ring-2 focus:ring-yellow-500 transition-shadow" required></textarea>
+                </div>
+                <button type="submit" class="w-full bg-yellow-500 text-gray-900 font-semibold py-3 px-6 rounded-md hover:bg-yellow-600 transition-colors">Kirim Pesan</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer class="text-center p-4 text-gray-500 text-sm mt-12">
+        <p>&copy; 2024 Dimas Agung. Semua Hak Cipta Dilindungi.</p>
+    </footer>
+
+</body>
+</html>
