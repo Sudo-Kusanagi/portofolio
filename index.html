@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portofolio Dimas Agung</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -16,7 +17,6 @@
 </head>
 <body class="bg-gray-900 text-gray-200">
 
-    <!-- Header Section -->
     <header class="bg-gray-800 p-4 sticky top-0 z-50">
         <nav class="container mx-auto flex justify-between items-center">
             <h1 class="font-bold text-lg">Dimas Agung</h1>
@@ -38,7 +38,6 @@
 
     <main class="container mx-auto p-4 sm:p-6 lg:p-8">
 
-        <!-- About Me Section -->
         <section id="about" class="bg-gray-800 rounded-xl p-6 sm:p-8 flex flex-col md:flex-row items-center space-y-6 md:space-y-0 md:space-x-8 mb-12">
             <div class="flex-shrink-0">
                 <img src="profil/profil_saya.png" alt="Foto Profil" class="w-32 h-32 md:w-40 md:h-40 rounded-full object-cover border-4 border-gray-700">
@@ -54,77 +53,66 @@
             </div>
         </section>
 
-        <!-- Hobbies Section -->
         <section id="hobbies" class="text-center mb-12">
-            <h2 class="font-bold text-2xl sm:text-3xl mb-4">Hobi saya</h2>
-            <p class="text-gray-400 mb-8 max-w-2xl mx-auto">Saya suka membuat desain grafis seperti poster infografis ataupun membuat Photo manipulation, saya memulai hobi ini sejak tahun 2019 dimana saat itu dunia sedang terkena wabah virus Covid 19.</p>
+            <h2 class="font-bold text-2xl sm:text-3xl mb-4">Hobi saya </h2>
+            <p class="text-gray-400 mb-8 max-w-2xl mx-auto">Saya suka membuat desain grafis seperti poster infografis ataupun membuat Photo manipulation. Saya memulai hobi ini sejak tahun 2020.</p>
             
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- Image 1 -->
                 <div class="relative group rounded-xl overflow-hidden shadow-md transform transition-transform duration-300 hover:scale-105">
                     <img src="design/wallpaper_desktop1.png" alt="Karya Desain 1" class="w-full h-auto object-cover">
                     <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                        <p class="text-white text-lg font-semibold">wallpaper untuk desktop dengan tema anime</p>
+                        <p class="text-white text-lg font-semibold">wallpaper desktop anime</p>
                     </div>
                 </div>
-                <!-- Image 2 -->
                 <div class="relative group rounded-xl overflow-hidden shadow-md transform transition-transform duration-300 hover:scale-105">
                     <img src="design/wallpaper_desktop2.png" alt="Karya Desain 2" class="w-full h-auto object-cover">
                     <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                        <p class="text-white text-lg font-semibold">wallpaper untuk desktop dengan tema anime</p>
+                        <p class="text-white text-lg font-semibold">wallpaper desktop anime</p>
                     </div>
                 </div>
-                <!-- Image 3 -->
                 <div class="relative group rounded-xl overflow-hidden shadow-md transform transition-transform duration-300 hover:scale-105">
-                    <img src="design/poster_andre_barbershop.png" alt="Karya Desain 3" class="w-full h-auto object-cover">
+                    <img src="design/Gemini.png" alt="Karya Desain 3" class="w-full h-auto object-cover">
                     <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                        <p class="text-white text-lg font-semibold">promosi andre barbeshop</p>
+                        <p class="text-white text-lg font-semibold">poster desain grafis terinspirasi dari gemini</p>
                     </div>
                 </div>
-                <!-- Image 4 -->
                 <div class="relative group rounded-xl overflow-hidden shadow-md transform transition-transform duration-300 hover:scale-105">
-                    <img src="design/Gemini.png" alt="Karya Desain 4" class="w-full h-auto object-cover">
+                    <img src="design/SAKEER.png" alt="Karya Desain 4" class="w-full h-auto object-cover">
                     <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                        <p class="text-white text-lg font-semibold">poster anime terinspiarsi dari ai gemini</p>
+                        <p class="text-white text-lg font-semibold">desain poster game honor of kings</p>
                     </div>
                 </div>
-                <!-- Image 5 -->
                 <div class="relative group rounded-xl overflow-hidden shadow-md transform transition-transform duration-300 hover:scale-105">
-                    <img src="design/SAKEER.png" alt="Karya Desain 5" class="w-full h-auto object-cover">
+                    <img src="design/poster_andre_barbershop.png" alt="Karya Desain 5" class="w-full h-auto object-cover">
                     <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                        <p class="text-white text-lg font-semibold">Hero support favorit saya di Honor of kings</p>
+                        <p class="text-white text-lg font-semibold">poster promosi andre barbershop</p>
                     </div>
                 </div>
-                <!-- Image 6 -->
                 <div class="relative group rounded-xl overflow-hidden shadow-md transform transition-transform duration-300 hover:scale-105">
                     <img src="design/winter_of_death.jpg" alt="Karya Desain 6" class="w-full h-auto object-cover">
                     <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                         <p class="text-white text-lg font-semibold">poster film fiksi horor</p>
                     </div>
                 </div>
+                
             </div>
         </section>
 
-        <!-- Apps Section -->
         <section id="apps" class="text-center mb-12">
             <h2 class="font-bold text-2xl sm:text-3xl mb-4">Aplikasi yang saya gunakan</h2>
             <div class="flex flex-wrap justify-center items-center gap-8">
-                <!-- App 1 -->
                 <div class="flex flex-col items-center">
                     <img src="icon/Pinterest.png" alt="Pinterest Icon" class="w-16 h-16 sm:w-20 sm:h-20 rounded-full">
                     <p class="mt-2 text-sm sm:text-base">Pinterest</p>
                 </div>
-                <!-- App 2 -->
                 <div class="flex flex-col items-center">
                     <img src="icon/pixellab.png" alt="Pixelab Icon" class="w-16 h-16 sm:w-20 sm:h-20 rounded-full">
                     <p class="mt-2 text-sm sm:text-base">Pixelab</p>
                 </div>
-                <!-- App 3 -->
                 <div class="flex flex-col items-center">
                     <img src="icon/canva.png" alt="Canva Icon" class="w-16 h-16 sm:w-20 sm:h-20 rounded-full">
                     <p class="mt-2 text-sm sm:text-base">Canva</p>
                 </div>
-                <!-- App 4 -->
                 <div class="flex flex-col items-center">
                     <img src="icon/Alight_motion.png" alt="Alight motion Icon" class="w-16 h-16 sm:w-20 sm:h-20 rounded-full">
                     <p class="mt-2 text-sm sm:text-base">Alight motion</p>
@@ -132,7 +120,6 @@
             </div>
         </section>
 
-        <!-- Contact Section -->
         <section id="contact" class="bg-gray-800 rounded-xl p-6 sm:p-8 max-w-xl mx-auto">
             <h2 class="font-bold text-4xl text-center mb-4">Ayo kenalan!</h2>
             <form id="contact-form" action="mailto:alamat-email-anda@contoh.com" method="GET" class="space-y-4">
@@ -149,6 +136,11 @@
             </form>
         </section>
 
+        <a href="math.html" class="block w-full text-center mt-4">
+                <button class="w-full bg-yellow-400 text-gray-900 font-semibold py-3 px-6 rounded-md hover:bg-yellow-500 transition-colors">
+                    Coba Kalkulator
+                </button>
+            </a>
     </main>
 
     <footer class="text-center p-4 text-gray-500 text-sm mt-12">
@@ -156,32 +148,22 @@
     </footer>
 
     <script>
-        // Validasi formulir
-        const contactForm = document.getElementById('contact-form');
-        contactForm.addEventListener('submit', function(event) {
-            const emailInput = document.getElementById('email');
-            const emailValue = emailInput.value;
-            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-            
-            if (!emailRegex.test(emailValue)) {
-                alert('Tolong masukkan format email yang valid.');
-                event.preventDefault(); // Menghentikan pengiriman formulir jika validasi gagal
-            }
-        });
+        $(document).ready(function(){
+            // Toggle navigasi di perangkat mobile menggunakan jQuery
+            $('#hamburger-menu').click(function(){
+                $('#nav-links').slideToggle();
+            });
 
-        // Toggle navigasi di perangkat mobile
-        const hamburgerMenu = document.getElementById('hamburger-menu');
-        const navLinks = document.getElementById('nav-links');
-        
-        hamburgerMenu.addEventListener('click', function() {
-            // Mengubah tampilan navigasi dari hidden menjadi flex dan sebaliknya
-            if (navLinks.classList.contains('hidden')) {
-                navLinks.classList.remove('hidden');
-                navLinks.classList.add('flex');
-            } else {
-                navLinks.classList.remove('flex');
-                navLinks.classList.add('hidden');
-            }
+            // Validasi formulir dengan jQuery
+            $('#contact-form').submit(function(event) {
+                const emailInput = $('#email').val();
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                
+                if (!emailRegex.test(emailInput)) {
+                    alert('Tolong masukkan format email yang valid.');
+                    event.preventDefault(); // Menghentikan pengiriman formulir jika validasi gagal
+                }
+            });
         });
     </script>
 
